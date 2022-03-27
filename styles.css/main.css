@@ -1,0 +1,121 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*ELEMENTOS BASE*/
+
+body{
+    background: var(--preto);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /*permite alinhar os elementos em tela. o display flex joga tudo como row por padrão*/
+    align-items: center; /*centralizar os itens*/
+    justify-content: space-between; /*para alinhar os elementos horizontalmente. Espaço entre o h2 e a nav*/
+}
+
+header .logo{
+    margin: 20px;
+    margin-left: 0em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--vermelho);
+}
+
+header nav a{
+    margin: 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px; /*espaçamento entre as palavras*/
+}
+
+.container{
+    margin-left: 20px;
+}
+
+header nav a:hover{
+    /*quando o mouse passar por cima, mude de cor*/
+    color: #ffff;
+}
+
+/*FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/interestelar.jpg');
+
+    height: 500px;
+    background-size: cover; /*para pegar a área de cobertura da caixa.*/
+
+    display: flex; /*por padrão fica em row o flex direction*/
+    flex-direction: column;
+    justify-content: center; /*para ficar centralizado*/
+    align-items: flex-start; /*para O ITEM ficar a esquerda*/
+
+}
+
+.filme-principal .descricao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 60%; */
+    
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    width: bold;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50) ; /*cor apenas do botão*/
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*quando passar o mouse mudar o cursor*/
+
+}
+
+.botao:hover{ /*mudar o efeito quando passar o mouse*/
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.classificacao{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 0 20px 20px;
+  
+}
+
+footer .footer{
+    background: #2f2f30;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
